@@ -1,4 +1,5 @@
 import React from "react";
+import "./../design/lib/_variables.scss";
 
 class Counter extends React.Component {
   constructor(props) {
@@ -21,9 +22,15 @@ class Counter extends React.Component {
   render() {
     return (
       <div>
-        <h4>{this.state.counter}</h4>
-        <a onClick={this.handleIncrementClick}>Click Me to Increment</a>
-        <a onClick={this.handleDecrementClick}>Click Me to Decrement</a>
+        <h4 className={this.state.counter >= 0 ? "positive" : "negative"}>
+          {this.state.counter}
+        </h4>
+        <a className="add" onClick={this.handleIncrementClick}>
+          Add!
+        </a>
+        <a className="subtract" onClick={this.handleDecrementClick}>
+          Subtract!
+        </a>
       </div>
     );
   }
