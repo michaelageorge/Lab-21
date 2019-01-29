@@ -1,0 +1,40 @@
+header {
+  text-align: center;
+  background: $background;
+  border-radius: $space;
+  box-shadow: 0 0 5px 0;
+  color: $black;
+  h1 {
+    padding: $space;
+  }
+}
+
+div {
+  text-align: center;
+  color: $black;
+  h4 {
+    background: $background;
+    border-radius: $space;
+    box-shadow: 0 0 5px 0;
+  }
+  a {
+    padding: 5px;
+    margin: $space;
+    background: $background;
+    border-radius: $space;
+    box-shadow: 0 0 5px 0;
+    cursor: crosshair;
+  }
+  a:hover {
+    background: $accentColor;
+  }
+}
+
+footer {
+  text-align: center;
+  background: $background;
+  border-radius: $space;
+  box-shadow: 0 0 5px 0;
+  margin-top: $space * 2;
+  color: $black;
+}
